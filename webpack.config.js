@@ -2,16 +2,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
-        styles: './src/styles/main.scss'
+        main: './src/index.js'
     },
     output: {
-        clean: false,
+        clean: true,
         assetModuleFilename: "assets/[hash][ext]"
     },
     devServer: {
-        open: true,
+        open: false,
+        host: '127.0.0.1',
+        port: 4173,
         static: {
             directory: './src',
             watch: true
