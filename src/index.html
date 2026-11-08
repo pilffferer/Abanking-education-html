@@ -1,16 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover useful design and development tools. Search the collection and save your favourites.">
+  <meta name="theme-color" content="#1e252b">
+  <title>Antools — tools for designers and developers</title>
 </head>
-
 <body>
-    
-</body>
+  <a class="skip-link" href="#catalog">Skip to tools</a>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero__illustration" src="./assets/illustration.png" width="589" height="568" alt="">
+      <div class="container hero__container">
+        <header class="site-header">
+          <a class="site-header__logo" href="#home" aria-label="Antools home"><img src="./assets/logo.png" width="140" height="38" alt="antools."></a>
+          <nav class="navigation" aria-label="Main navigation">
+            <a class="navigation__link" href="#home">Home</a>
+            <details class="navigation__categories">
+              <summary class="navigation__link">Categories<img src="./assets/chevron-down.png" width="18" height="18" alt=""></summary>
+              <div class="navigation__menu">
+                <button class="navigation__option" type="button" data-category="all">All tools</button>
+                <button class="navigation__option" type="button" data-category="design">Design</button>
+                <button class="navigation__option" type="button" data-category="development">Development</button>
+                <button class="navigation__option" type="button" data-category="productivity">Productivity</button>
+              </div>
+            </details>
+            <a class="navigation__link" href="#catalog" data-view="collection">My Collections</a>
+            <a class="navigation__link" href="https://www.figma.com/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
+          </nav>
+          <div class="site-header__account">
+            <button class="site-header__login" type="button" data-profile="login">Login</button>
+            <button class="button site-header__signup" type="button" data-profile="signup">Sign Up</button>
+          </div>
+        </header>
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Awesome tools for<span class="hero__line-space" aria-hidden="true">&nbsp;</span><br>Designer &amp; Developer<span class="hero__accent">.</span></h1>
+          <p class="hero__description">Antool is a web collection of information on paid or free Design and Development tools</p>
+          <form class="search" role="search">
+            <img class="search__icon" src="./assets/search.png" width="24" height="24" alt="">
+            <label class="sr-only" for="tool-search">Find a tool</label>
+            <input class="search__input" id="tool-search" name="q" type="search" placeholder="find more than 430+ tools..." autocomplete="off">
+            <button class="button search__button" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="social-links" aria-label="Social media">
+          <a class="social-links__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="./assets/facebook.png" width="58" height="58" alt=""></a>
+          <a class="social-links__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="./assets/instagram.png" width="58" height="58" alt=""></a>
+          <a class="social-links__link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><img src="./assets/twitter.png" width="58" height="58" alt=""></a>
+        </div>
+      </div>
+    </section>
 
+    <section class="catalog container" id="catalog" aria-labelledby="catalog-title">
+      <h2 class="catalog__title" id="catalog-title">Most Popular Tools</h2>
+      <p class="catalog__description">Tools for the best Designers and Developers<span class="catalog__line-space" aria-hidden="true">&nbsp;</span><br class="catalog__break">most popularly used in the world</p>
+      <div class="catalog__filters" hidden><span class="catalog__filter-label"></span><button class="catalog__reset" type="button">Show all tools</button></div>
+      <div class="catalog__grid">
+        <article class="tool-card" data-tool="figma" data-category="design">
+          <div class="tool-card__content">
+            <div class="tool-card__header">
+              <div class="tool-card__icon-box"><img class="tool-card__icon" src="./assets/figma.svg" width="64" height="64" alt=""></div>
+              <div class="tool-card__heading">
+                <h3 class="tool-card__title">FIGMA</h3>
+                <p class="tool-card__price">Free</p>
+              </div>
+            </div>
+            <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-card__footer">
+              <div class="tool-card__actions">
+                <button class="tool-card__action" type="button" data-action="like" aria-label="Like FIGMA" aria-pressed="false">
+                  <img class="tool-card__heart" src="./assets/heart.png" width="28" height="28" alt="">
+                  <img class="tool-card__heart tool-card__heart_active" src="./assets/heart-active.png" width="28" height="28" alt="">
+                </button>
+                <button class="tool-card__action" type="button" data-action="collect" aria-label="Add FIGMA to my collection" aria-pressed="false"><img src="./assets/folder-add.png" width="30" height="30" alt=""></button>
+              </div>
+              <a class="tool-card__visit" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Visit<span class="sr-only"> FIGMA</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="tool-card tool-card_featured" data-tool="sketch" data-category="design">
+          <img class="tool-card__glow" src="./assets/featured-glow.png" width="392" height="294" alt="">
+          <img class="tool-card__surface" src="./assets/featured-background.png" width="396" height="298" alt="">
+          <div class="tool-card__content">
+            <div class="tool-card__header">
+              <div class="tool-card__icon-box"><img class="tool-card__icon" src="./assets/sketch.svg" width="64" height="57" alt=""></div>
+              <div class="tool-card__heading">
+                <h3 class="tool-card__title">Sketch</h3>
+                <p class="tool-card__price">Trial & Paid</p>
+              </div>
+            </div>
+            <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-card__footer">
+              <div class="tool-card__actions">
+                <button class="tool-card__action tool-card__action_active" type="button" data-action="like" aria-label="Like Sketch" aria-pressed="true">
+                  <img class="tool-card__heart" src="./assets/heart.png" width="28" height="28" alt="">
+                  <img class="tool-card__heart tool-card__heart_active" src="./assets/heart-active.png" width="28" height="28" alt="">
+                </button>
+                <button class="tool-card__action" type="button" data-action="collect" aria-label="Add Sketch to my collection" aria-pressed="false"><img src="./assets/folder-add.png" width="30" height="30" alt=""></button>
+              </div>
+              <a class="tool-card__visit" href="https://www.sketch.com/" target="_blank" rel="noopener noreferrer">Visit<span class="sr-only"> Sketch</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="tool-card" data-tool="vscode" data-category="development">
+          <div class="tool-card__content">
+            <div class="tool-card__header">
+              <div class="tool-card__icon-box"><img class="tool-card__icon" src="./assets/vscode.svg" width="65" height="63" alt=""></div>
+              <div class="tool-card__heading">
+                <h3 class="tool-card__title">Visual Studio Code</h3>
+                <p class="tool-card__price">Free</p>
+              </div>
+            </div>
+            <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-card__footer">
+              <div class="tool-card__actions">
+                <button class="tool-card__action" type="button" data-action="like" aria-label="Like Visual Studio Code" aria-pressed="false">
+                  <img class="tool-card__heart" src="./assets/heart.png" width="28" height="28" alt="">
+                  <img class="tool-card__heart tool-card__heart_active" src="./assets/heart-active.png" width="28" height="28" alt="">
+                </button>
+                <button class="tool-card__action" type="button" data-action="collect" aria-label="Add Visual Studio Code to my collection" aria-pressed="false"><img src="./assets/folder-add.png" width="30" height="30" alt=""></button>
+              </div>
+              <a class="tool-card__visit" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visit<span class="sr-only"> Visual Studio Code</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="tool-card" data-tool="notion" data-category="productivity">
+          <div class="tool-card__content">
+            <div class="tool-card__header">
+              <div class="tool-card__icon-box"><img class="tool-card__icon" src="./assets/notion.png" width="64" height="64" alt=""></div>
+              <div class="tool-card__heading">
+                <h3 class="tool-card__title">Notion</h3>
+                <p class="tool-card__price">Free & Paid</p>
+              </div>
+            </div>
+            <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-card__footer">
+              <div class="tool-card__actions">
+                <button class="tool-card__action" type="button" data-action="like" aria-label="Like Notion" aria-pressed="false">
+                  <img class="tool-card__heart" src="./assets/heart.png" width="28" height="28" alt="">
+                  <img class="tool-card__heart tool-card__heart_active" src="./assets/heart-active.png" width="28" height="28" alt="">
+                </button>
+                <button class="tool-card__action" type="button" data-action="collect" aria-label="Add Notion to my collection" aria-pressed="false"><img src="./assets/folder-add.png" width="30" height="30" alt=""></button>
+              </div>
+              <a class="tool-card__visit" href="https://www.notion.com/" target="_blank" rel="noopener noreferrer">Visit<span class="sr-only"> Notion</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="tool-card" data-tool="slack" data-category="productivity">
+          <div class="tool-card__content">
+            <div class="tool-card__header">
+              <div class="tool-card__icon-box"><img class="tool-card__icon" src="./assets/slack.svg" width="65" height="64" alt=""></div>
+              <div class="tool-card__heading">
+                <h3 class="tool-card__title">Slack</h3>
+                <p class="tool-card__price">Free & Paid</p>
+              </div>
+            </div>
+            <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-card__footer">
+              <div class="tool-card__actions">
+                <button class="tool-card__action" type="button" data-action="like" aria-label="Like Slack" aria-pressed="false">
+                  <img class="tool-card__heart" src="./assets/heart.png" width="28" height="28" alt="">
+                  <img class="tool-card__heart tool-card__heart_active" src="./assets/heart-active.png" width="28" height="28" alt="">
+                </button>
+                <button class="tool-card__action" type="button" data-action="collect" aria-label="Add Slack to my collection" aria-pressed="false"><img src="./assets/folder-add.png" width="30" height="30" alt=""></button>
+              </div>
+              <a class="tool-card__visit" href="https://slack.com/" target="_blank" rel="noopener noreferrer">Visit<span class="sr-only"> Slack</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="tool-card" data-tool="invision" data-category="design">
+          <div class="tool-card__content">
+            <div class="tool-card__header">
+              <div class="tool-card__icon-box"><img class="tool-card__icon" src="./assets/invision.svg" width="65" height="64" alt=""></div>
+              <div class="tool-card__heading">
+                <h3 class="tool-card__title">Invision</h3>
+                <p class="tool-card__price">Free & Paid</p>
+              </div>
+            </div>
+            <p class="tool-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-card__footer">
+              <div class="tool-card__actions">
+                <button class="tool-card__action" type="button" data-action="like" aria-label="Like Invision" aria-pressed="false">
+                  <img class="tool-card__heart" src="./assets/heart.png" width="28" height="28" alt="">
+                  <img class="tool-card__heart tool-card__heart_active" src="./assets/heart-active.png" width="28" height="28" alt="">
+                </button>
+                <button class="tool-card__action" type="button" data-action="collect" aria-label="Add Invision to my collection" aria-pressed="false"><img src="./assets/folder-add.png" width="30" height="30" alt=""></button>
+              </div>
+              <a class="tool-card__visit" href="https://www.invisionapp.com/" target="_blank" rel="noopener noreferrer">Visit<span class="sr-only"> Invision</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="catalog__empty" hidden>No tools found. Try another search or show all tools.</p>
+      <button class="catalog__more" type="button">Load more</button>
+      <p class="sr-only" id="tool-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="brands container" aria-labelledby="brands-title">
+      <img class="brands__glow" src="./assets/brand-glow.png" width="1224" height="253" alt="">
+      <img class="brands__surface" src="./assets/brand-background.png" width="1228" height="257" alt="">
+      <h2 class="brands__title" id="brands-title">Trusted more than 150+ brand</h2>
+      <div class="brands__logos">
+        <a class="brands__link" href="https://www.microsoft.com/" target="_blank" rel="noopener noreferrer"><img src="./assets/brand-microsoft.png" width="193" height="42" alt="Microsoft"></a>
+        <a class="brands__link" href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><img src="./assets/brand-google.png" width="157" height="51" alt="Google"></a>
+        <a class="brands__link" href="https://slack.com/" target="_blank" rel="noopener noreferrer"><img src="./assets/brand-slack.png" width="194" height="49" alt="Slack"></a>
+        <a class="brands__link" href="https://wordpress.org/" target="_blank" rel="noopener noreferrer"><img src="./assets/brand-wordpress.png" width="194" height="44" alt="WordPress"></a>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="profile" aria-labelledby="profile-title">
+    <button class="profile__close" type="button" aria-label="Close profile window">×</button>
+    <h2 class="profile__title" id="profile-title">Join Antools</h2>
+    <p class="profile__description">Save a profile on this device and keep your favourite tools close.</p>
+    <form class="profile__form">
+      <label class="profile__label" for="profile-name">Name</label>
+      <input class="profile__input" id="profile-name" name="name" autocomplete="given-name" maxlength="50" required>
+      <label class="profile__label" for="profile-email">Email</label>
+      <input class="profile__input" id="profile-email" name="email" type="email" autocomplete="email" maxlength="150" required>
+      <p class="profile__message" role="status"></p>
+      <button class="button profile__submit" type="submit">Save profile</button>
+      <button class="profile__remove" type="button" hidden>Remove saved profile</button>
+    </form>
+  </dialog>
+</body>
 </html>
